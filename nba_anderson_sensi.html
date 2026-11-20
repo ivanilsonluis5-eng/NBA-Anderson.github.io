@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b10">
+<title>NBA ANDERSON | Gerador de Sensi Free Fire</title>
+<style>
+:root{--bg:#080a0f;--panel:#11151e;--panel2:#171d28;--red:#ff334f;--blue:#22c8ff;--text:#f4f7fb;--muted:#98a3b5;--line:#263142}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0%,#14283b 0,transparent 28%),radial-gradient(circle at 0% 20%,#32121b 0,transparent 25%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;min-height:100vh}
+header{position:sticky;top:0;z-index:5;background:#090c12eF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+nav{max-width:1120px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:1000;letter-spacing:1.5px;font-size:22px}.logo span{color:var(--red);text-shadow:0 0 18px #ff334f88}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:13px}nav a:hover{color:var(--blue)}
+main{max-width:1120px;margin:auto;padding:34px 20px 70px}
+.hero{text-align:center;padding:38px 12px 30px}.eyebrow{color:var(--blue);font-weight:800;letter-spacing:3px;font-size:11px}
+h1{font-size:clamp(38px,8vw,70px);margin:12px 0 8px;line-height:1;font-weight:1000;letter-spacing:2px}h1 span{color:var(--red);text-shadow:0 0 24px #ff334f66}
+.hero p{color:var(--muted);max-width:600px;margin:14px auto;line-height:1.6}
+.pill{display:inline-block;border:1px solid #2a465a;color:#a9eaff;background:#10202b;padding:8px 13px;border-radius:30px;font-size:11px;font-weight:700}
+.layout{display:grid;grid-template-columns: minmax(0, .92fr) minmax(0,1.08fr);gap:20px;align-items:start}
+.panel{background:linear-gradient(145deg,#151b26,#0e121a);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 15px 45px #0005}
+.panel h2{font-size:17px;margin:0 0 18px}.panel h2:before{content:"";display:inline-block;width:4px;height:17px;background:var(--red);border-radius:5px;margin-right:9px;vertical-align:-3px}
+label{display:block;font-size:12px;color:#c5cedb;margin:14px 0 7px;font-weight:700}
+input,select{width:100%;padding:13px 12px;background:#090d14;border:1px solid #2a3545;border-radius:10px;color:white;outline:none;font-size:14px}
+input:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #22c8ff18}
+button{border:0;border-radius:10px;padding:13px 15px;font-weight:900;cursor:pointer;transition:.2s;font-size:12px;letter-spacing:.4px}
+button:hover{transform:translateY(-2px);filter:brightness(1.12)}button:active{transform:scale(.98)}
+.primary{width:100%;margin-top:20px;color:white;background:linear-gradient(100deg,#f42d4b,#a91636);box-shadow:0 8px 25px #f42d4b30}
+.secondary{background:#202a39;color:#e8f5ff;border:1px solid #34445a}.blue{background:#103244;color:#8fe5ff;border:1px solid #1c6682}.danger{background:#351922;color:#ff9aaa;border:1px solid #733044}
+.actions{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:14px}.actions button{width:100%}
+.result-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}.result-head h2{margin:0}
+.status{font-size:10px;color:#8ff0c1;background:#123027;padding:7px 9px;border-radius:20px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.stat{background:linear-gradient(145deg,#1a2330,#101620);border:1px solid #2a394b;border-radius:13px;padding:14px;min-width:0}
+.stat-top{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#aab6c7;font-size:11px;font-weight:700}.stat strong{display:block;font-size:29px;margin:9px 0 10px;letter-spacing:1px}
+.track{height:5px;background:#293445;border-radius:8px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--red),var(--blue));border-radius:8px;transition:width .5s}
+.copy-mini{background:transparent;color:var(--blue);padding:3px 0;font-size:10px}
+.note{font-size:11px;color:var(--muted);line-height:1.5;margin:14px 0 0}
+.history{margin-top:20px}.history-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-top:1px solid var(--line);font-size:12px}.history-item small{display:block;color:var(--muted);margin-top:4px}.empty{color:var(--muted);font-size:12px;padding:10px 0}
+.footer{text-align:center;color:#718095;font-size:11px;padding:25px 10px 0}
+.loading{animation:pulse .65s infinite alternate}@keyframes pulse{to{opacity:.35;filter:blur(1px)}}
+@media(max-width:760px){nav{padding:13px 16px}nav a{margin-left:9px;font-size:11px}.layout{grid-template-columns:1fr}main{padding:20px 13px 50px}.hero{padding:28px 5px 22px}.panel{padding:17px}}
+@media(max-width:380px){.cards{gap:8px}.stat{padding:11px}.stat strong{font-size:25px}.actions{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">NBA <span>ANDERSON</span></div><div><a href="#gerador">GERADOR</a><a href="#historico">HISTÓRICO</a></div></nav></header>
+<main>
+<section class="hero"><div class="eyebrow">FREE FIRE • FREE FIRE MAX</div><h1>NBA <span>ANDERSON</span></h1><div class="pill">SENSITIVITY GENERATOR</div><p>Cria uma configuração de sensibilidade de referência com base no teu dispositivo e estilo de jogo. Testa e ajusta no treino até encontrares uma configuração confortável.</p></section>
+<div class="layout">
+<section class="panel" id="gerador">
+<h2>Personaliza a tua sensi</h2>
+<label for="brand">Marca do dispositivo</label>
+<select id="brand"><option>Tecno</option><option>Infinix</option><option>Redmi</option><option>Xiaomi</option><option>Samsung</option><option>iPhone</option><option>Itel</option><option>Oppo</option><option>Vivo</option><option>Realme</option><option>Huawei</option><option>Outro</option></select>
+<label for="model">Modelo específico</label><input id="model" placeholder="Ex.: Tecno Spark 40">
+<label for="player">Tipo de jogador</label>
+<select id="player"><option value="capa">Puxar capa (Headshot)</option><option value="rush">Rush</option><option value="2">2 dedos</option><option value="3">3 dedos</option><option value="4">4 dedos</option><option value="5">5 dedos</option><option value="precisao">Precisão</option><option value="agressivo">Jogador agressivo</option></select>
+<label for="style">Estilo de sensibilidade</label>
+<select id="style"><option value="equilibrada">Sensibilidade equilibrada</option><option value="alta">Sensibilidade alta</option><option value="capa">Sensibilidade para capa</option><option value="curta">Curta distância</option><option value="longa">Longa distância</option></select>
+<button class="primary" id="generate">⚡ GERAR SENSI</button>
+<p class="note">Os valores são sugestões de partida, não configurações oficiais nem garantia de capa. O desempenho varia conforme o aparelho, a versão do jogo e a preferência pessoal.</p>
+</section>
+<section class="panel">
+<div class="result-head"><h2>Configuração gerada</h2><span class="status" id="status">PRONTO</span></div>
+<div class="cards" id="cards">
+<div class="empty">Preenche as opções e toca em “GERAR SENSI” para ver os teus valores.</div>
+</div>
+<div class="actions">
+<button class="secondary" id="copy">COPIAR SENSI</button><button class="blue" id="new">NOVA SENSI</button>
+<button class="secondary" id="save">GUARDAR CONFIGURAÇÃO</button><button class="secondary" id="share">PARTILHAR</button>
+<button class="blue" id="copyDpi">BOTÃO DPI · COPIAR</button><button class="blue" id="copyFire">BOTÃO DE DISPARO · COPIAR</button>
+<button class="danger" id="clear">LIMPAR</button>
+</div>
+</section>
+</div>
+<section class="panel history" id="historico">
+<div class="result-head"><h2>Histórico recente</h2><button class="danger" id="clearHistory">APAGAR HISTÓRICO</button></div>
+<div id="historyList" class="empty">Ainda não guardaste nenhuma configuração.</div>
+</section>
+<div class="footer">NBA ANDERSON • Ferramenta independente criada para sugestões de configuração. Não é afiliada à Garena.</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let current=null;
+const limits={Geral:[90,200], 'Ponto Vermelho':[90,200], 'Mira 2X':[80,200], 'Mira 4X':[70,200], 'Mira AWM':[10,100], 'Olhadinha':[80,200]};
+const rand=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
+function makeConfig(){
+ const player=$('player').value,style=$('style').value,brand=$('brand').value;
+ let base=style==='alta'?190:style==='longa'?145:style==='curta'?190:style==='capa'?188:170;
+ if(player==='precisao')base-=15;if(player==='rush'||player==='agressivo')base+=5;
+ const deviceAdjust=['iPhone','Samsung','Xiaomi','Redmi'].includes(brand)?0:3;
+ const vals={};
+ Object.entries(limits).forEach(([key,[min,max]],i)=>{
+   let factor=[1,.98,.94,.89,.34,.86][i];
+   let spread=i===4?9:8;
+   vals[key]=clamp(Math.round(base*factor+deviceAdjust+rand(-spread,spread)),min,max);
+ });
+ const dpiBase=brand==='iPhone'?null:brand==='Tecno'||brand==='Infinix'||brand==='Itel'?480:brand==='Samsung'?440:460;
+ vals.DPI=dpiBase===null?'Não aplicável':clamp(dpiBase+rand(-35,35),360,600);
+ vals['Botão de disparo']=clamp((player==='2'?52:player==='precisao'?43:49)+rand(-4,4),35,65);
+ return vals;
+}
+function render(v){
+ current=v;
+ const cards=$('cards');cards.innerHTML='';
+ Object.entries(v).forEach(([name,value])=>{
+  const isPct=name==='Botão de disparo',isDpi=name==='DPI';
+  const min=isDpi?360:name==='Botão de disparo'?35:limits[name][0];
+  const max=isDpi?600:name==='Botão de disparo'?65:limits[name][1];
+  const numeric=typeof value==='number'?value:0;
+  const pct=isDpi||isPct?((numeric-min)/(max-min))*100:((numeric-min)/(max-min))*100;
+  const card=document.createElement('div');card.className='stat';
+  const top=document.createElement('div');top.className='stat-top';
+  const label=document.createElement('span');label.textContent=name.toUpperCase();
+  const copy=document.createElement('button');copy.className='copy-mini';copy.textContent='COPIAR';
+  copy.onclick=()=>copyText(name+': '+value+(isPct?'%':''));
+  top.append(label,copy);
+  const strong=document.createElement('strong');strong.textContent=value+(isPct?'%':'');
+  const track=document.createElement('div');track.className='track';
+  const fill=document.createElement('div');fill.className='fill';fill.style.width=(typeof value==='number'?clamp(pct,0,100):0)+'%';
+  track.append(fill);card.append(top,strong,track);cards.append(card);
+ });
+ $('status').textContent='GERADO';
+}
+function profile(){return `${$('brand').value} ${$('model').value.trim()||'—'} · ${$('player').selectedOptions[0].text} · ${$('style').selectedOptions[0].text}`}
+function generate(){
+ $('status').textContent='A GERAR…';$('cards').classList.add('loading');
+ setTimeout(()=>{$('cards').classList.remove('loading');render(makeConfig())},420);
+}
+function asText(v=current){if(!v)return '';return 'NBA ANDERSON — CONFIGURAÇÃO FREE FIRE\n'+profile()+'\n'+Object.entries(v).map(([k,x])=>k+': '+x+(k==='Botão de disparo'?'%':'')).join('\n')}
+async function copyText(text){try{await navigator.clipboard.writeText(text);$('status').textContent='COPIADO!'}catch(e){const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();document.execCommand('copy');t.remove();$('status').textContent='COPIADO!'}}
+function loadHistory(){
+ let h=JSON.parse(localStorage.getItem('nbaHistory')||'[]');const root=$('historyList');root.innerHTML='';
+ if(!h.length){root.className='empty';root.textContent='Ainda não guardaste nenhuma configuração.';return}
+ root.className='';
+ h.forEach((item,i)=>{const row=document.createElement('div');row.className='history-item';const info=document.createElement('div');const b=document.createElement('b');b.textContent=item.title;const small=document.createElement('small');small.textContent=item.date+' · Geral '+item.values.Geral+' · DPI '+item.values.DPI;info.append(b,small);const btn=document.createElement('button');btn.className='secondary';btn.textContent='VER';btn.onclick=()=>render(item.values);row.append(info,btn);root.append(row)});
+}
+$('generate').onclick=generate;$('new').onclick=generate;
+$('copy').onclick=()=>current?copyText(asText()):$('status').textContent='GERA UMA SENSI PRIMEIRO';
+$('save').onclick=()=>{if(!current){$('status').textContent='GERA UMA SENSI PRIMEIRO';return}let h=JSON.parse(localStorage.getItem('nbaHistory')||'[]');h.unshift({title:profile(),date:new Date().toLocaleString('pt-PT'),values:current});localStorage.setItem('nbaHistory',JSON.stringify(h.slice(0,10)));loadHistory();$('status').textContent='CONFIGURAÇÃO GUARDADA'};
+$('share').onclick=async()=>{if(!current){$('status').textContent='GERA UMA SENSI PRIMEIRO';return}const data={title:'NBA ANDERSON — Sensi Free Fire',text:asText()};if(navigator.share){try{await navigator.share(data)}catch(e){}}else copyText(asText())};
+$('copyDpi').onclick=()=>current?copyText('DPI recomendado: '+current.DPI):$('status').textContent='GERA UMA SENSI PRIMEIRO';
+$('copyFire').onclick=()=>current?copyText('Botão de disparo: '+current['Botão de disparo']+'%'):$('status').textContent='GERA UMA SENSI PRIMEIRO';
+$('clear').onclick=()=>{$('model').value='';$('brand').selectedIndex=0;$('player').selectedIndex=0;$('style').selectedIndex=0;current=null;$('cards').innerHTML='<div class="empty">Campos limpos. Gera uma nova configuração quando estiveres pronto.</div>';$('status').textContent='PRONTO'};
+$('clearHistory').onclick=()=>{localStorage.removeItem('nbaHistory');loadHistory();$('status').textContent='HISTÓRICO APAGADO'};
+loadHistory();
+</script>
+</body>
+</html>
